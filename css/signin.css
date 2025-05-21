@@ -1,0 +1,158 @@
+button {
+  border: white 1px;
+}
+
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+}
+
+#login {
+  text-align: center; 
+  margin-left: 0px;
+}
+
+.banner img {
+  height: 420px;
+  width: 630px;
+  margin-top: 32px;
+  border-radius: 22%;
+  border: 10px outset ;
+  float: left;  
+}
+
+.container{
+  height: 400px;
+}
+
+.form-signin {
+  background: #f0f0f5;
+  position: relative;
+  top: 55px;
+  
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+  border-radius: 10px;
+  float: right;
+  
+  align-items: center;
+  justify-content: center;
+}
+
+.form-signin h2 {
+    margin-bottom: 55px;
+}
+
+.form-signin .form-check {
+  margin-top: -8px;
+  margin-bottom: 27px;
+}
+
+.form-signin button {
+  margin-bottom: 30px;
+  margin-top: 12px;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-cad{
+  background: #f0f0f5;
+  position: relative;
+  top: -35px;
+  
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+  border-radius: 10px;
+  float: right;
+  
+  align-items: center;
+  justify-content: center;
+}
+
+.form-cad h2 {
+  margin-bottom: 20px;
+}
+
+#btn-cadastrar {
+  margin-bottom: 4px;
+}
+
+.form-cad.form-cad-heading,
+.form-cad .checkbox {
+  margin-bottom: 50px;
+}
+
+.form-cad .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-cad .form-control:focus {
+  z-index: 2;
+}
+.form-cad input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-cad input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-cad select {
+  margin-top: 10px;
+
+}
+
+.form-cad button {
+  margin-top: 10px;
+}
+
+.redes-sociais {
+  text-align: center;
+  display: flex;
+}
+.redes-sociais img {
+  float: left;
+
+}
+.redes-sociais button + button{
+  margin-left: 5px;
+} 

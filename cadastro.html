@@ -1,0 +1,45 @@
+<!-- formulário para criação de novos usuários  -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="css/signin.css" rel="stylesheet"> <!-- Css do bootstrap-->
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-signin" style="background: #42dea4;">
+            <h2 style="text-align: center;">Cadastrar Usuário</h2>
+                        
+                <!--<label>Nome</label>-->
+                <input type="text" name="nome" placeholder="Digite o nome e o sobrenome" class="form-control" id="nome"><br>
+                
+                <!--<label>Data de nascimento</label>-->
+                <input type="text" name="dataNascimento" placeholder="Data de nascimento (dd/mm/aaaa)" class="form-control" onkeypress="$(this).mask('00/00/0000')" id="data"><br>
+
+                <!--<label>E-mail</label>-->
+                <input type="text" name="email" placeholder="Digite o seu e-mail" class="form-control" id="email"><br>
+
+                <!--<label> Telefone </label>-->
+                <input type="email" name="cel" placeholder="Digite seu celular" class="form-control" id="tel" onkeypress="$(this).mask('(00) 00000-0000')" ><br>
+                
+                <!--<label>Usuário</label>-->
+                <input type="text" name="usuario" placeholder="Digite o usuário" class="form-control" id="usuario"><br>
+                
+                <!--<label>Senha</label>-->
+                <input type="password" name="senha" placeholder="Digite a senha" class="form-control" id="senha"><br>
+                
+                <button name="btnCadUsuario" class="btn btn-success" onclick="cadUser()">Cadastrar</button><br><br> <!-- Class do bootstrap-->
+
+                Já possui uma conta? <a href="login.html">Login</a>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
+</body> 
+</html>

@@ -1,0 +1,12 @@
+#icone{
+   float: left ;
+}
+.container{
+   background-color: #F8F9FA;
+   background-repeat: repeat-y;
+   background-size: auto;
+}
+#menu-lateral{
+   color: red;
+}
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link href="css/signin.css" rel="stylesheet"> <!-- Css do bootstrap-->
+    <title>Login</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <img name="slide" width="630px" height="420px">
+            <script src="js/login.js"></script>
+        </div>
+        <div class="form-signin" id="form-signin">
+            <h2 id="login">
+                Faça seu Login:
+            </h2>
+
+			<!--<label>Usuário</label>-->
+            <input type="text" name="usuario" placeholder="Digite o seu usuário" class="form-control" id="loginuser"><br>
+            <!--<label>Senha</label>-->
+            <input type="password" name="senha" placeholder="Digite a sua senha" class="form-control" id="pass" style="border-radius: 5px;"><br>
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Lembrar usuário</label>
+            </div>
+
+            <button class="btn btn-success" onclick="login()">Acessar</button>
+            <br>
+            Você ainda não possui uma conta? <a href="#" onclick="Mudarestado('form-signin')">Crie grátis</a> 
+        </div>
+        <div class="form-cad" id="form-cad">
+            <h2 style="text-align: center;">Cadastre-se agora mesmo!</h2>
+                        
+                <!--<label>Nome</label>-->
+                <input type="text" name="nome" placeholder="Digite o nome e o sobrenome" class="form-control" id="nome" value="João" style="padding: 5px 10px 5px 10px;">
+                
+                <!--<label>Data de nascimento</label>-->
+                <input type="text" name="dataNascimento" placeholder="Data de nascimento (dd/mm/aaaa)" class="form-control" value="26/12/2000" onkeypress="$(this).mask('00/00/0000')" id="data" style="padding: 5px 10px 5px 10px;">
+
+                <!--<label>E-mail</label>-->
+                <input type="email" name="email" placeholder="Digite o seu e-mail" class="form-control" id="email" value="joaorrp46@gmail.com" style="border-radius: 5px; padding: 5px 10px 5px 10px;">
+
+                <!--<label> Telefone </label>-->
+                <input type="text" name="cel" placeholder="Digite seu celular" class="form-control" id="tel" value="(12)99135-2978" onkeypress="$(this).mask('(00) 00000-0000')" style="margin-top: 20px; padding: 5px 10px 5px 10px;">
+                
+                <!--<label>Usuário</label>-->
+                <input type="text" name="usuario" placeholder="Digite o usuário" class="form-control" id="loginnew" value="joao" style="padding: 5px 10px 5px 10px;">
+                
+                <!--<label>Senha</label>-->
+                <input type="password" name="senha" placeholder="Digite a senha" class="form-control" id="senha" value="123456" style="border-radius: 5px; padding: 5px 10px 5px 10px;">
+                
+                <select name="select" class="btn btn-secondary dropdown-toggle" style="margin-bottom: 10px;" id="tipo">
+                    <option value="type" selected>Tipo de conta</option> 
+                    <option value="user">Usuário</option>
+                    <option value="ad">Anunciante</option>
+                </select>
+                
+                <button name="btnCadUsuario" id="btn-cadastrar" class="btn btn-success" onclick="cadUser()">Cadastrar</button><br><!-- Class do bootstrap-->
+                <div class="redes-sociais">
+                    <button name="btnCadUsuario" class="btn btn-success" style="background-color: #4267B2; font: bold;">
+                        <img src="img/icons/facebook2.svg" width="20px" height="20px">
+                        Facebook
+                    </button>
+                    <button name="btnCadUsuario" class="btn btn-success" style="background-color: #d44638; font: bold;">
+                        <img src="img/icons/mail2.svg" width="20px" height="20px">
+                        Gmail
+                    </button> 
+                </div>
+                <br>Já possui uma conta? <a href="#" onclick="Mudarestado('form-signin')">Login</a>
+        </div>
+    </div>
+    <script>    
+        document.getElementById("form-cad").style.display = 'none';
+        function Mudarestado(el) {
+            var display = document.getElementById(el).style.display;
+            if(display == "none"){
+                document.getElementById(el).style.display = 'block';
+                document.getElementById("form-cad").style.display = 'none';
+            }else{
+                document.getElementById(el).style.display = 'none';
+                document.getElementById("form-cad").style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
